@@ -1,0 +1,13 @@
+<?php
+$hostname = "localhost";
+$bancodedados = "cadastro_pi";
+$usuario = "root";
+$senha = "";
+$mysqli= new mysqli($hostname,$usuario,$senha,$bancodedados);//Aqui vai verificar se todas as informações pedida estão corretas //
+if ($mysqli->connect_errno){
+    echo "Falha ao conectar: (" .$mysqli->connect_errno . ")" . $mysqli->connect_error; //Comando que dirá o error e mostrar onde está o error//
+}
+else{
+    echo "Conexão efetuada com sucesso";
+}
+?>
